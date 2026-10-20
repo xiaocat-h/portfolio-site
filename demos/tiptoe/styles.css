@@ -1,0 +1,220 @@
+body {
+    background-color: #fff6d5;
+    color: rgb(0, 0, 0);
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+.logo {
+    max-width: 100px;
+    min-width: 60px;
+    padding: 5px;
+}
+
+.page-header {
+    background-color: #fbe8a6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.navigation a {
+    color: brown;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 120%;
+}
+
+.navigation {
+    display: flex;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.nav-button {
+    background-color: transparent;
+    border-color: transparent;
+    display: none;
+}
+
+.banner {
+    background-color: #08090A;
+    color: #CCCCCC;
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h2 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.banner button,.banner2 button {
+    background-color: rgba(255, 255, 0, 0.947);
+    padding: 0.8em;
+    min-width: 12em;
+    border: 1px white solid;
+    border-radius: 4pt;
+    font-size: 1rem;
+}
+
+.banner2 {
+    font-size: 1rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.card img {
+    max-width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-content {
+    padding: 1em;
+}
+
+.card-content p {
+    text-align: justify;
+}
+
+.card {
+    border: 1px solid #a4a4a4;
+    border-radius: 8pt;
+    overflow: hidden;
+    flex: 1;
+    min-width: 360px;
+}
+
+.card button {
+    min-width: 100%;
+    background-color: transparent;
+    padding: 0.5em;
+    border: 1px solid #666666;
+}
+
+.content {
+    margin: 3em 10em 3em 10em;
+}
+
+.banner2 {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background: linear-gradient(to bottom right, #B5AEDC,
+            #ebe9f2ec);
+}
+
+.banner2 button {
+    background-color: transparent;
+    border-radius: 1.5em;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: #edbc0be5;
+    min-height: 20vh;
+    padding: 1em;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-menu a,
+.legal a,
+.social a {
+    color: white;
+    text-decoration: none;
+}
+
+.social a {
+    font-size: 1.6em;
+}
+
+.legal {
+    min-width: 100%;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    gap: 5px;
+}
+
+#contact input,
+#contact textarea {
+    margin-bottom: 1em;
+    padding: 5px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttons>button {
+    min-width: 100px;
+}
+
+#map {
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    gap: 10px;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: #08090A;
+}
+
+.breadcrumbs .active {
+    font-weight: bold;
+}

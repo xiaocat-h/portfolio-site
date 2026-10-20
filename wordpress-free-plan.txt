@@ -1,0 +1,52 @@
+Portfolio + WordPress.com 免费版方案
+核查日期：2026-10-20
+
+建议结构
+1. GitHub Pages：保留现有紫色 Portfolio 首页、摄影预览、资质及项目入口。
+2. WordPress.com 免费子域名：作为 Blog 和项目案例后台。
+3. Portfolio 导航添加 Blog，链接至 WordPress；WordPress 导航添加 Portfolio，返回 GitHub 首页。
+两者使用各自的免费网址。仅添加链接即可，不需要购买域名。
+这不是把整个 HTML 网站直接导入 WordPress；两个发布目标仍各自维护。
+
+迁移步骤
+1. 在 WordPress.com 创建免费站点，保留免费子域名，不购买域名或付费附加项。
+   注册、同意服务条款等步骤由账户本人完成。
+2. 选择免费区块主题，用内置全局样式配置近似的莫兰迪紫、暖白、深紫文字。
+   建议色值：文字 #382C43、底色 #FBF8F7、浅紫 #EEE6F3、黄色点缀 #F6E9BA。
+   免费主题允许的调色范围视主题而定，不能保证逐像素复现当前自定义站。
+3. 建立 Blog 文章页。新建文章分类 Projects、Cloud & AI、Finance、Photography。
+   用分类页或导航链接区分项目案例与普通博客，不需要自定义内容类型插件。
+4. 将 TipToe Soles 和 About Seoul 的案例文字复制为 Projects 分类文章，上传对应截图。
+   文章里保留 Live Demo／GitHub 链接；摄影作品使用图库或图片块。
+5. AWS 和 UNSW 资料可放在固定 About 页面；保留凭证验证链接。
+6. 新站确认后，把真实 WordPress 地址填入 content.js 的 blog 字段，导航会显示 Blog。
+   将项目 Live Demo 或新加的 case-study 链接指向对应文章时，保留原演示入口。
+7. 在 WordPress 菜单加入 GitHub Portfolio 的实际 URL。
+8. 检查手机布局、图片替代文字、分类、菜单与公开访问；定期导出 WordPress 内容备份。
+
+后续维护边界
+- 在 WordPress 后台写文章、修改项目案例和发布图片，无需改代码。
+- 静态首页的简短项目卡片、证书、联系方式仍需更新 content.js 后重新发布。
+- WordPress 新文章不会自动出现在 GitHub 首页；首页只需链接到 Blog／项目分类即可。
+- 如以后希望所有内容都在一个后台维护，可将首页也用 WordPress 区块重建。
+
+免费版约束
+- 使用 WordPress.com 免费地址，有平台广告。
+- 免费版不能上传自定义主题，也不能安装第三方插件。
+- 当前 HTML/CSS/JS 压缩包不是 WordPress 可安装主题，不能直接导入成为同款首页。
+- 免费方案不能把 WordPress 挂到 GitHub Pages 的同一域名 /blog 路径下；采用菜单跨站链接。
+- 不要把静态截图当成 WordPress 可恢复备份。若找到 WXR/XML，才可测试内容导入。
+
+摄影图片建议（站点设计建议，不是平台硬限制）
+- 横向大图：长边 2400px，常用 3:2 或 16:9；建议约 300–700KB，尽量控制在 1MB 内。
+- 首页缩略图：长边 1200–1600px，通常 100–250KB。
+- 竖图：长边约 2000–2400px；保留原始比例，在展示框中留白，不强行拉伸。
+- 高像素密度／4K 屏幕可另备 3200px 大图，按需要加载，避免首页一次加载全部原片。
+- 使用 sRGB；照片优先 WebP 或质量合适的 JPEG，保留原始高清文件作为离线备份。
+
+官方资料
+文章页：https://wordpress.com/support/posts-page/
+文章分类：https://wordpress.com/support/posts/categories/
+主题上传限制：https://wordpress.com/support/themes/uploading-setting-up-custom-themes/
+广告：https://wordpress.com/support/no-ads/
+子域名限制：https://wordpress.com/support/domains/connect-subdomain/
