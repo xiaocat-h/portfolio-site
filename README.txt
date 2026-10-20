@@ -1,3 +1,8 @@
+Published portfolio
+Repository: https://github.com/xiaocat-h/portfolio-site
+Website: https://xiaocat-h.github.io/portfolio-site/
+Publishing source: main branch, repository root.
+
 Portfolio — GitHub 发布与维护
 
 这些文件是可直接发布的静态网站，index.html 已位于根目录。
